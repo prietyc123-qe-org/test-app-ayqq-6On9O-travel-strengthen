@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-qzyp
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pkumari_org/build-e2e-clon-tenant/test-app-ayqq/devfile-sample-python-basic-qzyp@sha256:a1ce816a41a46bef128381029fa946893aca1225e6424d68adf888ee42a24893
+        name: my-python
+        resources: {}
+status: {}
